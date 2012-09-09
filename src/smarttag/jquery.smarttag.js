@@ -36,7 +36,7 @@ jQuery.fn.addSmartTags = function(pattern, tagLinks) {
 		 var tagLink = tagLinks[i];
 		 var liLinkStock = document.createElement('li');		 
 		
-		 liLinkStock.appendChild(createActionLink(tagLink.description, 
+		 liLinkStock.appendChild(createActionLink(tagLink.description.replace('{params}',text.textContent), 
 			 					tagLink.url.replace('{params}', 
 								text.textContent.replace(/[\$|#]/, ''))));
 		 ulLinks.appendChild(liLinkStock);

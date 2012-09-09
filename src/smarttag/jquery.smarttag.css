@@ -15,9 +15,33 @@
 	padding: 0px 8px 2px 0px;
 } /* all list items */ 
 .smartTagMenu li ul {
+	
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	
+	/* fallback */	
+	background:black;
+	 
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #C2C2C2 0%, #000000 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #C2C2C2 0%, #000000 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #C2C2C2 0%, #000000 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #C2C2C2), color-stop(1, #000000));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #C2C2C2 0%, #000000 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #C2C2C2 0%, #000000 100%);	
 	position: absolute; 
-	background:black; 
-	padding: 0px 0px 0px 4px; 
+	
+	padding: 0px 0px 0px 4px;
 	width: 170px; 
 	left: -9999px;
 } /* second-level lists */ 
