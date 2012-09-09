@@ -1,0 +1,26 @@
+.smartTag { 
+	background-color: lightblue; 
+	hover: blue; 
+	} 
+.smartTagMenu, .smartTagMenu ul {
+	padding: 0; margin: 0; 
+	list-style: none;
+} 
+.smartTagMenu a {
+	display:inline; 
+	width: 170px;
+} 
+.smartTagMenu li {
+	float: left; 
+	padding: 0px 8px 2px 0px;
+} /* all list items */ 
+.smartTagMenu li ul {
+	position: absolute; 
+	background:black; 
+	padding: 0px 0px 0px 4px; 
+	width: 170px; 
+	left: -9999px;
+} /* second-level lists */ 
+.smartTagMenu li:hover ul {left: auto; } /* nest list under hovered list items */ 
+.smartTagMenu li ul li a {color: #ffffff; text-decoration: none; display: block;} 
+.smartTagMenu li ul li a:hover {color: yellow; background:#663399;}
